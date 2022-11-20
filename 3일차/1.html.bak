@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>3일차 학습</title>
+	</head>
+	<body>
+		<header>
+			<h1>사이트연습</h1>
+			<nav>네비게이션(메뉴1)</nav>
+		</header>
+		<main>
+			<section>
+				컨텐츠1
+				<h2>대메뉴1</h2>
+				<article>
+					<h3>중메뉴1</h3>
+					<div>
+						<h4>소메뉴1</h4>
+						<P>어쩌구1</p>
+						<P><strong>어</strong>쩌구2</p>
+
+						<P>CO<sup>2</sup></p>
+						<span>인라인1</span>
+						<span>인라인2</span>
+					</div>
+				</article>
+				<article>
+					<h3>중메뉴2</h3>
+					<ol>
+						<li>순서1</li>
+						<li>순서2</li>
+					</ol>
+					<ul>
+						<li>순서없음1</li>
+						<li>순서없음2</li>
+					</ul>
+				</article>
+			</section>
+			<section>
+				<h2>대메뉴2</h2>
+
+				<table>
+					<caption>테이블에 대한 설명(어떤 테이블인지 설명)</caption>
+					<colgroup>
+
+					</colgroup>
+					<thead>
+						<tr>
+							<th colspan="2">칼럼1</th>
+							<th rowspan="2">칼럼2</th>
+						</tr>
+						<tr>
+							<th>칼럼2-1</th>
+							<th>칼럼2-2</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>내용1-1</td>
+							<td>내용1-2</td>
+							<td>내용2</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<h2>이미지넣기</h2>
+				<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fnamu.wiki%2Fw%2F%25EB%2594%2594%25EC%2598%25A4(EXO)&psig=AOvVaw1w4DMT3cTlWhOsvhpaJTr5&ust=1668765794170000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCNDIypj7tPsCFQAAAAAdAAAAABAE" alt="이미지에 대한 설명(대체 텍스트)">
+				<a href="https://namu.wiki/w/DIO" tit="링크" target="_self">나무위키</a>
+
+			</section>
+			<section>
+				<h2>유튜브 아이프레임</h2>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/iXM99GTJWsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+
+		</main>
+		<footer>
+			주소정보<br/>
+			소유권명시
+		</footer>
+	</body>
+</html>
