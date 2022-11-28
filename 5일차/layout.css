@@ -1,0 +1,30 @@
+/* 
+css - 상위요소에서 하위요소로 상속됨.
+import "" - 방식은 있으나 사용 권장X
+
+# id -> 고유값. 특정값. 골격구성할 때 사용. html 두번 선언X
+. class -> 다중
+
+선언 순서
+
+display = show / hide
+overflow 넘치냐 안넘치냐
+position 기본값 static
+        부모 relative
+        부모에게 묶인 상태 / 자식 absolute
+        부모없음 고정임 fixed
+top left right bottom
+우선순위 잡기 z-index 클수록
+width 넓이 em px rem %
+height 높이
+margin 외부여백
+padding 내부여백
+border 윤곽선
+background 바탕 image color position repeat size 
+font-size weight line-height color 
+
+중요도
+인스타일안 important! 가 가장 우선 순위 
+그 다음은 "절차 지향" 순서대로 우선 순위
+
+ */
