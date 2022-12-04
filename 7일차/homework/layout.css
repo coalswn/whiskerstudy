@@ -5,7 +5,7 @@
 *{line-height:1.3;}
 html, body{font-size:16px; color:#000000;}
 div{display:block;}
-a {color:#000000;}
+a {display:block; color:#000000;}
 
 #wrap{display:block; width:100%;}
 #wrap #header{display:block; max-width:1640px; height:80px; margin:0 auto; padding:0 30px;}
@@ -24,17 +24,23 @@ a {color:#000000;}
 #wrap #main #section-01 .text-con .top-tit{font-size:1.25rem;}
 #wrap #main #section-01 .text-con .tit{margin:10px 0 20px; font-size:3rem;}
 #wrap #main #section-01 .text-con .txt{color:#333333; font-size:1.125rem;}
-#wrap #main #section-02{display:block; max-width:1440px; width:100%; margin:0 100px auto;}
-#wrap #main #section-02 .box-list{margin:0 -20px;}
-#wrap #main #section-02 .box-list > li{float:left; width:25%; padding:0 20px;}
-#wrap #main #section-02 .box-list > li::after{content:''; display:block; clear:both;}
-#wrap #main #section-02 .box-list > li >a{overflow:hidden; height:300px; padding:0 20px; background-color:rgba(0,0,0,0.2);}
-#wrap #main #section-02 .box-list > li >a .item-con{font-size:1.25rem; text-align:center;}
+#wrap #main #section-02{display:block; max-width:1440px; width:100%; margin:0 auto;}
+#wrap #main #section-02 .box-list{display:block;}
+#wrap #main #section-02 .box-list::after{content:''; display:block; clear:both;}
+#wrap #main #section-02 .box-list > li{float:left; width:25%; height:100%;}
+#wrap #main #section-02 .box-list > li > a{overflow:hidden; padding-right:20px;}
+#wrap #main #section-02 .box-list > li:last-child > a{padding-right:0;}
+#wrap #main #section-02 .box-list > li > a .item-con{height:200px; padding-top:100px; font-weight:bold; font-size:1.25rem; text-align:center; background-color:rgba(70,70,70,0.3)}
+#wrap #main #section-02 .box-list > li > a .item-con:hover{background-color:rgba(70,70,70,0.2);}
+#wrap #main #section-02 .box-list > li:first-child> a .item-con{color:#00a2b1;}
+#wrap #main #section-02 .box-list > li:nth-child(2)> a .item-con{color:#0082d4;}
+#wrap #main #section-02 .box-list > li:nth-child(3)> a .item-con{color:#1639ac;}
+#wrap #main #section-02 .box-list > li:last-child> a .item-con{color:#950000;}
 
 #wrap #footer{display:block; padding:20px 0; background-color:#aaa;}
-#wrap #footer .foot-wrap{max-width:1440px; width:100%; height:100px; margin:0 auto; padding:0 100px;}
+#wrap #footer .foot-wrap{max-width:1000px; width:100%; height:100px; margin:0 auto; padding:0 100px 20px;}
 #wrap #footer .foot-wrap .foot-con{display:block; text-align: center;}
 #wrap #footer .foot-wrap .foot-con .foot-tit{font-size:1.25rem; color:#fff; margin-bottom:10px;}
-#wrap #footer .foot-wrap .foot-info{font-size:1.125rem; color:#fff;}
-#wrap #footer .foot-wrap .foot-info .info-item{float:left; padding:0 5px;}
-#wrap #footer .foot-wrap .foot-info:nth-child(2)::after{content:''; display:block; clear:both;}
+#wrap #footer .foot-wrap .foot-con .foot-info{display:block; padding:0 100px; font-size:1.125rem; color:#fff;}
+#wrap #footer .foot-wrap .foot-con .foot-info .info-item{float:left; margin-bottom:5px; padding:0 5px;}
+#wrap #footer .foot-wrap .foot-con .foot-info:nth-child(2) > span::after{content:''; display:block; clear:both;}
