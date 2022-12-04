@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+*{line-height:1.3;}
+html, body{font-size:16px; color:#000000;}
+div{display:block;}
+a {color:#000000;}
+
+#wrap{display:block; width:100%;}
+#wrap #header{display:block; max-width:1640px; height:80px; margin:0 auto; padding:0 30px;}
+#wrap #header #logo{display:block; float:left; width:10%; text-align:center;}
+#wrap #header #logo > a{font-weight:bold; font-size:1.5625rem;}
+#wrap #header .gnb{display:block; float:left; width:80%;}
+#wrap #header .gnb .gnb-list{display:block; margin:0 auto; padding:10px 150px;}
+#wrap #header .gnb .gnb-list .list-item{display:block; float:left; width:33.33%; text-align:center;}
+#wrap #header .gnb .gnb-list .list-item > a{padding:0 20px; font-size:1.25rem; text-align:center;}
+#wrap #header .btn-sitemap{display:block; float:right; width:10%; margin-top:10px;}
+#wrap #header::after{content:''; display:block; clear:both;}
+
+#wrap #main{display:block; width:100%; min-height:800px; height:100%;}
+#wrap #main #section-01{display:block; width:100%; margin-bottom:100px; padding-top:50px;}
+#wrap #main #section-01 .text-con{text-align:center;}
+#wrap #main #section-01 .text-con .top-tit{font-size:1.25rem;}
+#wrap #main #section-01 .text-con .tit{margin:10px 0 20px; font-size:3rem;}
+#wrap #main #section-01 .text-con .txt{color:#333333; font-size:1.125rem;}
+#wrap #main #section-02{display:block; max-width:1440px; width:100%; margin:0 100px auto;}
+#wrap #main #section-02 .box-list{margin:0 -20px;}
+#wrap #main #section-02 .box-list > li{float:left; width:25%; padding:0 20px;}
+#wrap #main #section-02 .box-list > li::after{content:''; display:block; clear:both;}
+#wrap #main #section-02 .box-list > li >a{overflow:hidden; height:300px; padding:0 20px; background-color:rgba(0,0,0,0.2);}
+#wrap #main #section-02 .box-list > li >a .item-con{font-size:1.25rem; text-align:center;}
+
+#wrap #footer{display:block; padding:20px 0; background-color:#aaa;}
+#wrap #footer .foot-wrap{max-width:1440px; width:100%; margin:0 auto; padding:0 100px;}
+#wrap #footer .foot-wrap .foot-con{display:block; text-align: center;}
+#wrap #footer .foot-wrap .foot-con .foot-tit{font-size:1.25rem; color:#fff;}
+#wrap #footer .foot-wrap .foot-info{font-size:1.125rem; color:#fff;}
+#wrap #footer .foot-wrap .foot-info .info-item{float:left;}
+#wrap #footer .foot-wrap .foot-info .info-item:nth-child(3):after{content:''; display:block; clear:both;}
