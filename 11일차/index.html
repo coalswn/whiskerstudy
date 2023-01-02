@@ -4,24 +4,69 @@
 		<meta charset="utf-8">
 		<title>11일차</title>
 		<style>
-		.box-wrap{
+		.box-wrap1{
 			display:flex;
-			align-items:center;
-			justify-content:sp;
+			align-items:center; /* 수평 가운데 정렬 */ 
+			justify-content:center; /* 수직 가운데 정렬 */ 
 			width:100%;
-			margin-bottom:50px;
+			margin-bottom:50px;			
 		}
-		.box-wrap .box{
+		.box-wrap1 .box{
 			width:200px;
 			height:200px;
 			margin:0 20px;
 			border:3px solid #000;
 		}
-		.box-wrap .box:nth-child(2){
+		.box-wrap1 .box:nth-child(1){
+			height:50px;
+		}
+		.box-wrap1 .box:nth-child(2){
 			height:100px;
 		}
-		.box-wrap .box:nth-child(1){
+
+		.box-wrap-1{
+			display:block;
+			height:200px;
+			text-align:center;  /* display:inline-block; */ 
+			margin-bottom:50px;
+		}
+		.box-wrap-1 .box-cell{
+			display:inline-block;
+			vertical-align:middle;  /* 수평 가운데 정렬 */ 
+			text-align:left;  /* 글 왼쪽 정렬 */ 
+		}
+		.box-wrap-1 .box-cell .box{
+			width:200px;
+			height:200px;
+			margin:0 20px;
+			border:3px solid #000;
+		}
+		.box-wrap-1 .box-cell:nth-child(1) .box{
 			height:50px;
+		}
+		.box-wrap-1 .box-cell:nth-child(2) .box{
+			height:100px;
+		}
+
+
+		.box-wrap2{
+			display:flex;
+			align-items:flex-end;  /* align-items:nomal; defult 값이 flex-start */ 
+			justify-content:space-between;  /* header(logo, menu, footer) 정렬시 사용 */ 
+			width:100%;
+			margin-bottom:50px;
+		}
+		.box-wrap2 .box{
+			width:200px;
+			height:200px;
+			margin:0 20px;
+			border:3px solid #000;
+		}
+		.box-wrap2 .box:nth-child(1){
+			height:50px;
+		}
+		.box-wrap2 .box:nth-child(2){
+			height:100px;
 		}
 
 
@@ -29,7 +74,6 @@
 			display:block;
 			position:relative;
 			height:200px;
-			text-align:center;
 		}
 		.box-wrap-2 .box-cell{
 			display:inline-block;
@@ -44,7 +88,7 @@
 		}
 		.box-wrap-2 .box-cell:nth-child(2){
 			left:50%;
-			margin-left:-100px;
+			margin-left:-100px;  /* width:200px;니까 가운데 맞추려면 -100px만큼 왼쪽으로 가야함. = calc(50% - 100px);*/ 
 		}
 		.box-wrap-2 .box-cell:nth-child(3){
 			right:0;
@@ -64,7 +108,19 @@
 		</style>
 	</head>
 	<body>
-		<div class="box-wrap">
+		<div class="box-wrap1">
+			<div class="box">박스1</div>
+			<div class="box">박스2</div>
+			<div class="box">박스3</div>
+		</div>
+
+		<div class="box-wrap-1">
+			<div class="box-cell"><div class="box">박스1</div></div>
+			<div class="box-cell"><div class="box">박스2</div></div>
+			<div class="box-cell"><div class="box">박스3</div></div>
+		</div>
+
+		<div class="box-wrap2">
 			<div class="box">박스1</div>
 			<div class="box">박스2</div>
 			<div class="box">박스3</div>
