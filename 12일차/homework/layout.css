@@ -23,7 +23,7 @@ html, body{
 }
 #header #logo > a{
     display:block;
-    font-size:2rem;
+    font-size:2.5rem;
     color:aliceblue;
     font-weight:bold;
 }
@@ -86,24 +86,24 @@ html, body{
 #main #section-01{
     display:flex;
     width:100%;
-    height:30%;
+    height:40%;
     align-items:center;
     justify-content:center;
 }
 #main #section-01 .text-box{
-    width:1200px;
+    width:1400px;
     color:#fff;
     text-align:center;
 }
 #main #section-01 .text-box .top-txt{
     display:block;
     margin-bottom:15px;
-    font-size:1.25rem;
+    font-size:1.375rem;
     text-shadow:1px 1px 2px #000;
 }
 #main #section-01 .text-box .tit{
     margin-bottom:15px;
-    font-size:1.875rem;
+    font-size:3.375rem;
     font-weight:bold;
     text-shadow:1px 1px 2px #000;
 }
@@ -111,7 +111,8 @@ html, body{
     color:royalblue;
 }
 #main #section-01 .text-box .txt{
-    font-size:1.125rem;
+    font-size:1.1375rem;
+    line-height:1.5;
     text-shadow:1px 1px 2px #000;
 }
 #main #section-02{
@@ -121,7 +122,7 @@ html, body{
 }
 #main #section-02 .quick-menu{
     display:flex;
-    width:1200px;
+    width:1400px;
     margin:0 -15px;
 }
 #main #section-02 .quick-menu > li{
@@ -178,27 +179,22 @@ html, body{
 }
 #footer .foot-con{
     display:flex;
-    padding:20px 0;
-    color:#fff;
+    padding:30px 0;
+    color:#ddd;
 }
 #footer .foot-con .foot-logo{
     display: block;
     margin-right:50px;
     font-weight:bold;
-    font-size:1.5rem;
+    font-size:2.25rem;
     text-align:center;
 }
 #footer .foot-con .foot-logo:hover{
     color:rgba(65, 105, 225, 0.938);
 }
 #footer .foot-con .foot-info{
-    padding-top:10px;
+    padding-top:20px;
 }
 #footer .foot-con .foot-info address{
-    margin-bottom:5px;
-    color:#eee;
+    margin-bottom:15px;
 }
-#footer .foot-con .foot-info .copyright{
-    color:#ddd;
-}
-
