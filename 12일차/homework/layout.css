@@ -1,0 +1,204 @@
+html, body{
+    height:100%;
+}
+
+#wrap{
+    position:relative;
+    min-height:100%;
+    background-image:url(img/img_bg.jpg);
+    background-position: center;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+#header{
+    display:flex;
+    height:80px;
+    background-color: rgba(209, 209, 209, 0.5);
+    border-bottom:2px solid rgba(221, 221, 221, 0.6);
+    align-items:center;
+    justify-content:space-around;
+}
+#header #logo{
+    display:block;
+}
+#header #logo > a{
+    display:block;
+    font-size:2rem;
+    color:aliceblue;
+    font-weight:bold;
+}
+#header #logo > a:hover{
+    color:royalblue;
+}
+#header #nav .menu-list{
+    display:flex;
+}
+#header #nav .menu-list > li{
+    display:flex;
+    padding:0 70px;
+    align-items:center;
+}
+#header #nav .menu-list > li > a{
+    display:block;
+    font-size:1.25rem;
+    color:#fff;
+    font-weight:bold; 
+}
+#header #nav .menu-list > li > a:hover{
+    color:royalblue;
+}
+#header .sitemap{
+    display:block;
+    padding:25px 0; 
+}
+#header .sitemap .sitemap-btn{
+    display:block;
+    position:relative;
+    width:30px;
+    height:30px;
+}
+#header .sitemap .sitemap-btn > span{
+    display:block;
+    position:absolute;
+    left:0;
+    width:100%;
+    height:2px;
+    background-color:#fff;
+}
+#header .sitemap .sitemap-btn > span:first-child{
+    top:0;
+}
+#header .sitemap .sitemap-btn > span:nth-child(2){
+    top:50%;
+    margin-top:-1px;
+}
+#header .sitemap .sitemap-btn > span:last-child{
+    bottom:0;
+}
+#header .sitemap .sitemap-btn:hover > span{
+    background-color:royalblue;
+}
+
+#main{
+    position:relative;
+    height:calc(100vh - 80px);
+}
+#main #section-01{
+    display:flex;
+    width:100%;
+    height:30%;
+    align-items:center;
+    justify-content:center;
+}
+#main #section-01 .text-box{
+    width:1200px;
+    color:#fff;
+    text-align:center;
+}
+#main #section-01 .text-box .top-txt{
+    display:block;
+    margin-bottom:15px;
+    font-size:1.25rem;
+    text-shadow:1px 1px 2px #000;
+}
+#main #section-01 .text-box .tit{
+    margin-bottom:15px;
+    font-size:1.875rem;
+    font-weight:bold;
+    text-shadow:1px 1px 2px #000;
+}
+#main #section-01 .text-box .tit:hover{
+    color:royalblue;
+}
+#main #section-01 .text-box .txt{
+    font-size:1.125rem;
+    text-shadow:1px 1px 2px #000;
+}
+#main #section-02{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#main #section-02 .quick-menu{
+    display:flex;
+    width:1200px;
+    margin:0 -15px;
+}
+#main #section-02 .quick-menu > li{
+    width:25%;
+    padding:0 15px;
+}
+#main #section-02 .quick-menu > li .item{
+    display:flex;
+    height:300px;
+    padding:20px;
+    border-radius:5px;
+    background-color:rgba(255, 255, 255, 0.7);
+    align-items:center;
+    justify-content:center;
+}
+#main #section-02 .quick-menu > li .item:hover{
+    background-color:rgba(255, 255, 255, 0.9);
+}
+#main #section-02 .quick-menu > li .item .item-con{
+    text-align:center;
+}
+#main #section-02 .quick-menu > li .item .item-con > figure{
+    margin-bottom:30px;
+}
+#main #section-02 .quick-menu > li .item .item-con > figure > img{
+    width:70px;
+}
+#main #section-02 .quick-menu > li .item .item-con .q-tit{
+    display:block;
+    margin-bottom:10px;
+    font-weight:bold;
+    font-size:1.5rem;
+    color:royalblue;
+}
+#main #section-02 .quick-menu > li .item .item-con .q-txt{
+    display:block;
+    margin-bottom:10px;
+    font-weight:bold;
+    font-size:1.0625rem;
+    color:#333;
+}
+
+#footer{
+    display:flex;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color: rgba(51, 51, 51, 0.8);
+    border-top:2px solid #555;
+    box-shadow:0 0 10px 3px rgba(51, 51, 51, 0.8);
+    align-items:center;
+    justify-content:center;
+}
+#footer .foot-con{
+    display:flex;
+    padding:20px 0;
+    color:#fff;
+}
+#footer .foot-con .foot-logo{
+    display: block;
+    margin-right:50px;
+    font-weight:bold;
+    font-size:1.5rem;
+    text-align:center;
+}
+#footer .foot-con .foot-logo:hover{
+    color:rgba(65, 105, 225, 0.938);
+}
+#footer .foot-con .foot-info{
+    padding-top:10px;
+}
+#footer .foot-con .foot-info address{
+    margin-bottom:5px;
+    color:#eee;
+}
+#footer .foot-con .foot-info .copyright{
+    color:#ddd;
+}
+
