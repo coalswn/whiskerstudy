@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<link href="reset.css" rel="stylesheet" type="text/css">
+		<link href="layout.css" rel="stylesheet" type="text/css">
+		<title>13일차 반응형 웹이란?</title>
+		<style>
+			
+
+
+		</style>
+	</head>
+
+	<body>
+
+	<ul id="box-wrap">
+		<li>
+	</ul>
+반응형 웹 - pc, 태블릿, 모바일 - 한 소스에서 같이 동작. 디바이스별 최적화. - 한 소스로 관리 가능, 비용이 상대적으로 쌈, 시간 절약 가능 - 효율적 / 유지보수 어려움, 완전한 최적화는 어려움.
+
+
+
+cf. 적응형 웹 - pc 버전, 태블릿 버전, 모바일 버전 다른 소스로 각각 만듦. 큰사이트들은 이걸로 되어있음 (데이터 多)- 각각 디자인, 최적화 가능 / 비용이 비쌈.
+
+폰트 단위 
+rem - html의 최상위 선택자의 폰트사이즈를 따라감. 
+em - 바로위 부모값의 폰트사이즈를 따라감. 디테일 설계시 좋음.
+px - 픽셀단위
+% - 쓰지말기, 흐려짐ㅎ
+
+반응형을 위해선 메타태그 선언 필수. name="viewport" content="widht=device-width, initial-scale="1">
+user-scalcble 예스 노 가능
+
+미디어유형 all(defult), print(@ media only print), screen and
+
+@media print {
+	
+}
+
+	</body>
+</html>
